@@ -1,0 +1,57 @@
+.aboutcontainer{
+    height: 80vh;
+    width:100vw;
+}
+.aboutcontainer h1{
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 2.2rem;
+}
+.aboutbody{
+    width:40vw;
+    margin-left: auto;
+    margin-right: auto;  
+    margin-top: 2rem;
+    font-size: 1.2rem;
+
+}
+.vectorleft{
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+.vectorright{
+    position: absolute;
+    right:0;
+    bottom: 0;
+
+}
+@media(max-width:1024px)
+{
+    .aboutbody{
+        width:90vw;
+        margin-left: auto;
+        margin-right: auto;  
+        margin-top: 2rem;
+        font-size: 1rem;
+    
+    }
+    .vectorleft{
+        position: absolute;
+        left:0;
+        bottom: 0;
+        z-index:-1;
+        height:12rem;
+        width:12rem;
+    }
+    .vectorright{
+        position: absolute;
+        right:0;
+        bottom: 0;
+        z-index:-1;
+        height:12rem;
+        width:12rem;
+    
+    }
+
+}
