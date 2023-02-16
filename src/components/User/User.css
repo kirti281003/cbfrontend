@@ -1,0 +1,14 @@
+.rocket{
+    transform: rotate(-20deg);
+    position: absolute;
+    bottom:20rem;
+    left:-2rem;
+    height:10rem;
+    
+}
+@media(max-width:1024px)
+{
+    .rocket{
+        display: none;
+    }
+}

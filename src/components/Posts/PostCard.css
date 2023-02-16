@@ -11,17 +11,19 @@
     margin-top: 1rem;
 }
 .postbody{
-    margin-top:1rem;
-    margin-bottom: 1rem;
+    margin-top:0rem;
+    margin-bottom:0rem;
+    padding:0.6rem;
 }
 .postUser{
     width:15rem;
     border-radius:10px;
-    height:2rem;
+    height:auto;
     color:white;
     background-color:#125185;
     margin-left: auto ;
     margin-right: auto;
    position: relative;
-   bottom:-2rem;
+   bottom:-1rem;
+   padding:0.4rem;
 }

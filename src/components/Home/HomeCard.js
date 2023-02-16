@@ -4,6 +4,7 @@ function HomeCard(props)
 {
     return(
         <>
+        
         <div className="homecard">
             <div className="boyimage">
             <img src={boy} className="boyImg"></img>

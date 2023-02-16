@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { getUser } from "../../actions/userActions";
 import UserPage from "./UserPage";
-
+import rocket from "../../images/rocket.png";
+import "./User.css";
 
 function User()
 {const dispatch=useDispatch();
@@ -31,7 +32,7 @@ function User()
         <div className="createpostdiv">
        <Link to="/createPost" className="createpostbutton">+</Link>
         </div>
-    
+    <div className="rocket"><img src={rocket}></img></div>
 
         </>
     )

@@ -17,6 +17,10 @@ function Signup()
     const registerSubmit=(e)=>
     {e.preventDefault();
         dispatch(register(email,password,name,username))
+        if(error)
+        {
+            window.alert(error);
+        }
   
     }
     useEffect(()=>
@@ -25,10 +29,7 @@ function Signup()
         {
             window.alert("Successful");
         }
-        if(error)
-        {
-            window.alert(error);
-        }
+       
     
         
 
