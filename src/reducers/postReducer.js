@@ -1,7 +1,7 @@
 import { ALL_POST_FAIL, ALL_POST_REQUEST, ALL_POST_SUCCESS, REGISTER_POST_FAIL, REGISTER_POST_REQUEST, REGISTER_POST_SUCCESS, USER_POST_FAIL, USER_POST_REQUEST, USER_POST_SUCCESS } from "../constants/postConstants";
 
 export const postReducer = (state = { post:{}}, action) => {
-    console.log(action.payload);
+
     switch (action.type) {
       case REGISTER_POST_REQUEST:
         return {
@@ -27,7 +27,7 @@ export const postReducer = (state = { post:{}}, action) => {
 }
 
 export const allPostReducer = (state = { posts:[]}, action) => {
-    console.log(action.payload);
+    
     switch (action.type) {
       case ALL_POST_REQUEST:
     case USER_POST_REQUEST:
@@ -41,6 +41,7 @@ export const allPostReducer = (state = { posts:[]}, action) => {
           ...state,
           loading: false,
           posts: action.payload,
+
         };
         case ALL_POST_FAIL:
             case USER_POST_FAIL:
@@ -49,6 +50,7 @@ export const allPostReducer = (state = { posts:[]}, action) => {
                 ...state,
                 loading: false,
                 error: action.payload,
+              
               };
         default:
                 return state;

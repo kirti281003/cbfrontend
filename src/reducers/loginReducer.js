@@ -1,15 +1,23 @@
-import { LOGIN_FAIL, LOGIN_REQUEST, LOGIN_SUCCESS, REGISTER_FAIL, REGISTER_REQUEST, REGISTER_SUCCESS,LOGOUT_REQUEST, LOGOUT_SUCCESS, LOGOUT_FAIL } from "../constants/userConstants";
-export const userReducer = (state = { post:{}}, action) => {
-    console.log(action.payload);
+import { LOGIN_FAIL, LOGIN_REQUEST, LOGIN_SUCCESS, REGISTER_FAIL, REGISTER_REQUEST, REGISTER_SUCCESS,LOGOUT_REQUEST, LOGOUT_SUCCESS, LOGOUT_FAIL, USER_REQUEST, USER_SUCCESS, USER_FAIL } from "../constants/userConstants";
+const initialState={
+  user:{},
+  isAuthenticated:false,
+
+}
+export const userReducer = (state = initialState, action) => {
+ console.log(action.payload);
+ console.log(action.type);
     switch (action.type) {
       case REGISTER_REQUEST:
     case LOGIN_REQUEST:
+      case USER_REQUEST:
         return {
           loading: true,
           isAuthenticated:false
         };
       case REGISTER_SUCCESS:
         case LOGIN_SUCCESS:
+          case USER_SUCCESS:
         return {
           ...state,
           loading: false,
@@ -18,6 +26,7 @@ export const userReducer = (state = { post:{}}, action) => {
         };
         case REGISTER_FAIL:
         case LOGIN_FAIL:
+          case USER_FAIL:
    
               return {
                 ...state,

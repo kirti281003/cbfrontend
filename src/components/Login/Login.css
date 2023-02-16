@@ -26,7 +26,7 @@ html,body{
 
 .logSubmit {
     margin-left:2rem;
-    margin-top:3rem;
+    margin-top:2rem;
     width:24rem;
     height:2.5rem;
     background-color:#125185 ;
@@ -38,7 +38,7 @@ html,body{
 }
 .loginForm h1{
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .loginForm span{
     margin-left:6rem;
@@ -48,7 +48,7 @@ html,body{
 .signupForm{
 
     background-color: #AFD0D0;
-    height:36rem;
+    height:38rem;
     width:28rem;
     position: absolute;
     left:10rem;
@@ -102,22 +102,22 @@ html,body{
     .loginForm{
 
         background-color: #AFD0D0;
-        height:75vh;
+        height:to;
         width:80vw;
         position: absolute;
-        right:2rem;
-        bottom:3rem;
+        right:2.75rem;
+        bottom:10rem;
     } 
     .loginInput{
         padding:1rem;
         width:14rem;
-        margin-left:1.2rem;
+        margin-left:3rem;
         margin-top:2.5rem;
         border-radius:10px;
     
     }
     .logSubmit {
-        margin-left:1rem;
+        margin-left:2rem;
         margin-top:3rem;
         width:16rem;
         height:2.5rem;
@@ -136,11 +136,12 @@ html,body{
     .signupForm{
 
         background-color: #AFD0D0;
-        height:90vh;
+        height:to;
         width:80vw;
         position: absolute;
-        left:2.5rem;
-        bottom:1rem;
+        left:2.75rem;
+
+        bottom:10rem;
     }
     .signupForm span{
         margin-left:1rem;
@@ -155,7 +156,7 @@ html,body{
     .signupForm .loginInput{
         padding:1rem;
         width:14rem;
-        margin-left:1.2rem;
+        margin-left:3rem;
         margin-top:1.5rem;
         border-radius:10px;
     }
@@ -170,5 +171,82 @@ html,body{
     }
     .signupLight{
         display:none;
+    }
+    /* .postForm{
+
+        background-color: #AFD0D0;
+        height:to;
+        width:80vw;
+        position: absolute;
+        left:2.75rem;
+
+        bottom:10rem;
+    }
+    .postForm h1{
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 1.6rem;
+    } */
+}
+/* .postForm{
+    background-color: #AFD0D0;
+    height:35rem;
+    width:28rem;
+    position: absolute;
+    right:12rem;
+    bottom:3rem;
+}
+.postForm h1{
+   font-size: 2rem;
+   text-align: center;
+   margin-top: 2rem;
+} */
+@media(max-width:375px)
+{
+    .loginForm{
+
+        background-color: #AFD0D0;
+        height:to;
+        width:80vw;
+        position: absolute;
+        right:2.5rem;
+        bottom:0rem;
+    } 
+    .loginInput{
+        padding:1rem;
+        width:14rem;
+        margin-left:2rem;
+        margin-top:2.5rem;
+        border-radius:10px;
+    
+    }
+    .logSubmit {
+        margin-left:1rem;
+        margin-top:3rem;
+        width:16rem;
+        height:2.5rem;
+        background-color:#125185 ;
+        font-size: 1rem;
+        color:white;
+        border-radius: 10px;
+        margin-bottom:2rem;
+    
+    }
+  
+    .signupForm .loginInput{
+        padding:1rem;
+        width:14rem;
+        margin-left:2rem;
+        margin-top:1.5rem;
+        border-radius:10px;
+    }
+    .signupForm{
+
+        background-color: #AFD0D0;
+        height:to;
+        width:80vw;
+        position: absolute;
+        left:2.5rem;
+        bottom:-3rem;
     }
 }

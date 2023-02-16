@@ -1,9 +1,11 @@
 import React,{Fragment, useEffect, useState} from "react";
 import { Link, useParams } from 'react-router-dom';
 import { useSelector,useDispatch } from "react-redux";
-import { login } from "../../actions/userActions";
+import { getUser, login } from "../../actions/userActions";
 import loginImage from "../../images/login.png";
 import  "./Login.css";
+import User from "../User/User";
+
 
 function Login()
 {const dispatch=useDispatch();
@@ -18,8 +20,9 @@ function Login()
     useEffect(()=>
     {
         if(isAuthenticated)
-        {
-            window.alert("Successful");
+        {  window.location.href=`/user/${user.username}`;
+        
+           
         }
         if(error)
         {
@@ -28,11 +31,11 @@ function Login()
     
         
 
-    },[isAuthenticated,error])
+    },[isAuthenticated,error,dispatch])
     return(
         <><div className="loginForm">
         <h1>Sign In With Email</h1>
-            <form onSubmit={loginSubmit} method="POST" action="/">
+            <form onSubmit={loginSubmit} method="POST" action="/login">
             <div className="loginDiv">
         
                 <input  type="text" name="email" className="loginInput" placeholder="Enter Your Email" 

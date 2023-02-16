@@ -1,4 +1,6 @@
-import { LOGIN_FAIL, LOGIN_REQUEST, LOGIN_SUCCESS, LOGOUT_FAIL, LOGOUT_REQUEST, LOGOUT_SUCCESS, REGISTER_FAIL,REGISTER_REQUEST,REGISTER_SUCCESS } from "../constants/userConstants";
+import { LOGIN_FAIL, LOGIN_REQUEST, LOGIN_SUCCESS, LOGOUT_FAIL, LOGOUT_REQUEST, LOGOUT_SUCCESS, 
+  REGISTER_FAIL,REGISTER_REQUEST,REGISTER_SUCCESS,
+USER_FAIL,USER_REQUEST,USER_SUCCESS } from "../constants/userConstants";
 import axios from "axios";
 
 
@@ -60,6 +62,29 @@ export const login = (email, password) => async (dispatch) => {
     {
       dispatch({
         type:LOGOUT_FAIL,
+        payload:error.response.data.error
+      })
+
+    }
+  }
+
+  export const getUser=()=>async(dispatch)=>{
+    try{
+      dispatch({
+        type:USER_REQUEST
+      })
+      const {data}=await axios.get(`/api/v1/user`);
+      console.log(data);
+      dispatch({
+        type:USER_SUCCESS,
+        payload:data.user
+      })
+
+    }
+    catch(error)
+    {
+      dispatch({
+        type:USER_FAIL,
         payload:error.response.data.error
       })
 

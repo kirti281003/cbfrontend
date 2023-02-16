@@ -1,0 +1,27 @@
+.postcard{
+    width:20rem;
+    height:15rem;
+    background-color: #ADD0D0;
+    text-align: center;
+    border-radius:20px;
+    margin-bottom:1rem;
+
+}
+.postcard h2{
+    margin-top: 1rem;
+}
+.postbody{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+.postUser{
+    width:15rem;
+    border-radius:10px;
+    height:2rem;
+    color:white;
+    background-color:#125185;
+    margin-left: auto ;
+    margin-right: auto;
+   position: relative;
+   bottom:-2rem;
+}

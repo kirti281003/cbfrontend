@@ -1,6 +1,8 @@
 
 import { userPosts } from "../../actions/postActions";
-import { logout } from "../../actions/userActions";
+import { getUser, logout } from "../../actions/userActions";
+import "./AllPosts.css";
+import PostCard from "./PostCard";
 
 const { useEffect } = require("react");
 const { useDispatch, useSelector } = require("react-redux")
@@ -10,26 +12,19 @@ function UserPosts()
     const dispatch=useDispatch();
     const{loading,error,posts}=useSelector(state=>state.posts)
     useEffect(()=>
-    {
+    {dispatch(getUser())
         dispatch(userPosts())
     },[dispatch])
-    const logoutSubmit=()=>{
-        dispatch(logout());
-        window.location.href="/login";
-    }
+  
     return(
         <>
+                  <div class="Post">
         {posts &&
         posts.map(post=>(
-            <div class="Post">
-            <h3>{post.heading}</h3>
-            <h6>{post.category}</h6>
-            <p>{post.body}</p>
-
-            </div>
-
+            <PostCard post={post}/>   
         ))}
-        <input type="submit" name="logout" onClick={logoutSubmit}/>
+        </div>
+        {/* <input type="submit" name="logout" onClick={logoutSubmit}/> */}
           
         </>
     )

@@ -1,0 +1,89 @@
+.HomeContainer{
+    margin-top: 8rem;
+    height:90vh;
+    width:100vw;
+}
+.homehead{
+    width:30vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.HomeContainer h1{
+    font-size:5rem;
+    text-align: center;
+}
+.vectorleftlight{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    
+}
+.vectorleftdark{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index:100;
+}
+.homeright{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    height:25rem;
+
+}
+.homeabout{
+    width:18rem;
+    border:1px solid black;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+.homearrow{
+    margin-right: auto;
+    margin-left: auto;
+    width:1rem;
+    margin-top: 3rem;
+}
+.arrowImg{
+    height:1rem;
+}
+@media(max-width:1024px)
+{
+    .HomeContainer{
+        margin-top:10rem;
+        height:90vh;
+    }
+    .homehead{
+        width:60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .HomeContainer h1{
+        font-size:3.3rem;
+        text-align: center;
+    }
+    .vectorleftlight{
+        position: absolute;
+        left:0;
+        bottom: 0;
+       
+        height:15rem;
+    }
+    .vectorleftdark{
+        position: absolute;
+        left:0;
+        bottom: 0;
+        height:12rem;
+        z-index:100;
+    }
+    .homeright{
+        position: absolute;
+        right:0;
+        bottom: 0;
+        height:15rem;
+    
+    }
+}
