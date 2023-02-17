@@ -44,5 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://earnsidemoneybackend.onrender.com/"
+  "proxy": "/api/*  https://earnsidemoneybackend.onrender.com/:splat  200 "
 }
