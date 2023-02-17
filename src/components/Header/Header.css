@@ -5,17 +5,18 @@
     top:0rem;
     z-index: 100;
     width:100vw;
-
+background:transparent;
 }
 .logo{
     height:8rem;
     position: absolute;
-    top:-1rem;
+    top:-2rem;
     z-index:1000;
 }
 .head-link{
     font-size:1.15rem;
     font-weight: bold;
+    
 }
 .head-link:active{
     background-color:#298ccd ;

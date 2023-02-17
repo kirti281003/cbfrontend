@@ -9,6 +9,7 @@ html,body{
     position: absolute;
     right:12rem;
     bottom:5rem;
+    z-index:20000;
 }
 .loginDiv{
   margin-left: auto;
@@ -53,6 +54,7 @@ html,body{
     position: absolute;
     left:10rem;
     bottom:2rem;
+    z-index:20000;
 }
 .signupForm .loginInput{
     padding:1rem;
@@ -92,6 +94,87 @@ html,body{
     bottom:0;
     right:0rem;
 }
+
+@media(max-width:1024px)
+{
+    .loginForm h1{
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 3rem;
+    }
+    .loginForm{
+
+        background-color: #AFD0D0;
+        height:to;
+        width:60vw;
+        position: absolute;
+        bottom:33rem;
+        margin-left: auto;
+        margin-right: auto;
+
+    } 
+    .loginInput{
+        padding:1rem;
+        width:25rem;
+        margin-left:3rem;
+        margin-top:2.5rem;
+        border-radius:10px;
+    
+    }
+    .logSubmit {
+        margin-left:3rem;
+        margin-top:3rem;
+        width:25rem;
+        height:2.5rem;
+        background-color:#125185 ;
+        font-size: 1rem;
+        color:white;
+        border-radius: 10px;
+        margin-bottom:2rem;
+    
+    }
+    .loginForm span{
+        margin-left:7rem;
+        font-size:1.2rem;
+        
+    }
+    .signupForm{
+
+        background-color: #AFD0D0;
+        height:to;
+        width:60vw;
+        position: absolute;
+        bottom:25rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .signupForm span{
+        margin-left:7rem;
+        font-size:1.2rem;
+        
+    }
+    .signupForm h1{
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 1.6rem;
+    }
+    .signupForm .loginInput{
+        padding:1rem;
+        width:25rem;
+        margin-left:3rem;
+        margin-top:1.5rem;
+        border-radius:10px;
+    }
+   
+    .signupImage{
+     position: absolute;
+     right:-10rem;
+    }
+  
+}
+
+
+
 @media(max-width:700px)
 {
     .loginForm h1{
@@ -106,7 +189,7 @@ html,body{
         width:80vw;
         position: absolute;
         right:2.75rem;
-        bottom:10rem;
+        bottom:13rem;
     } 
     .loginInput{
         padding:1rem;
@@ -201,7 +284,7 @@ html,body{
    text-align: center;
    margin-top: 2rem;
 } */
-@media(max-width:375px)
+@media(max-width:376px)
 {
     .loginForm{
 
@@ -210,7 +293,8 @@ html,body{
         width:80vw;
         position: absolute;
         right:2.5rem;
-        bottom:0rem;
+       top:10rem;
+  
     } 
     .loginInput{
         padding:1rem;

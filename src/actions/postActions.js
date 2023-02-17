@@ -21,14 +21,14 @@ export const registerPost=(heading,category,body)=>async(dispatch)=>{
 
   }
 
-  export const allPosts=()=>async(dispatch)=>{
+  export const allPosts=(keyword="")=>async(dispatch)=>{
     try{
         dispatch(
             {
                 type:ALL_POST_REQUEST
             }
         )
-        const {data}=await axios.get("/api/v1/posts");
+        const {data}=await axios.get(`/api/v1/posts?keyword=${keyword}`);
         console.log(data);
         dispatch(
             {

@@ -7,7 +7,7 @@ function Header() {
      <a className="navbar-brand" href="#">
         <img src={logo} className="logo"></img>
       </a>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary nav-inline">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-color: #ebe4e4 nav-inline" >
   <div className="container-fluid">
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
