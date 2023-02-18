@@ -73,7 +73,7 @@ export const login = (email, password) => async (dispatch) => {
       dispatch({
         type:USER_REQUEST
       })
-      const {data}=await axios.get(`/api/v1/user`);
+      const {data}=await axios.get(`/api/api/v1/user`);
       console.log(data);
       dispatch({
         type:USER_SUCCESS,
