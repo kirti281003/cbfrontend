@@ -36,4 +36,25 @@
         margin-top:6rem;
     
     }
+    .searchbox{
+        width:20rem;
+        border-radius: 20px;
+      height:2rem;
+        background-color: #3DD1CF;
+        position: absolute;
+        top:6rem;
+      margin-left:auto;
+      margin-right: auto;
+        
+        
+    }
+    .searchbox input{
+        width:17rem;
+        height:2rem;
+        border-radius: 20px;
+    }
+    .searchbox img{
+        height:1.1rem;
+        margin-left:1rem;
+    }
 }
