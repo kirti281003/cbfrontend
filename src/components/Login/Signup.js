@@ -42,7 +42,7 @@ function Signup()
             <div className="loginDiv">
                 <input className="loginInput" type="text" name="email" placeholder="Enter Your Email" 
                 onChange={(e)=>setEmail(e.target.value)}></input>
-                <input className="loginInput" type="text" name="password" placeholder="Enter Your Password"
+                <input className="loginInput" type="password" name="password" placeholder="Enter Your Password"
                 onChange={(e)=>setPassword(e.target.value)}></input>
                  <input className="loginInput" type="text" name="name" placeholder="Enter Your Name"
                 onChange={(e)=>setName(e.target.value)}></input>
