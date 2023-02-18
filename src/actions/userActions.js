@@ -2,6 +2,7 @@ import { LOGIN_FAIL, LOGIN_REQUEST, LOGIN_SUCCESS, LOGOUT_FAIL, LOGOUT_REQUEST, 
   REGISTER_FAIL,REGISTER_REQUEST,REGISTER_SUCCESS,
 USER_FAIL,USER_REQUEST,USER_SUCCESS } from "../constants/userConstants";
 import axios from "axios";
+const baseURL = process.env.NODE_ENV === "development" ? "localhost:5000" : "https://earnsidemoneybackend.onrender.com"
 
 
 export const login = (email, password) => async (dispatch) => {
@@ -11,7 +12,7 @@ export const login = (email, password) => async (dispatch) => {
       const config = { headers: { "Content-Type": "application/json" } };
   
       const { data } = await axios.post(
-        `/api/v1/login`,
+        baseURL+`/api/v1/login`,
         { email, password },
         config
       );
