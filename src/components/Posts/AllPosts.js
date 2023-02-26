@@ -12,6 +12,7 @@ function AllPosts()
     const dispatch=useDispatch();
     const{loading,error,posts}=useSelector(state=>state.posts)
     const {isAuthenticated,user}=useSelector(state=>state.user);
+    console.log(isAuthenticated);
     const filter=()=>
     {dispatch(allPosts(keyword))
 
@@ -19,11 +20,14 @@ function AllPosts()
 
     useEffect(()=>
     {
-        dispatch(getUser())
+        // dispatch(getUser())
         dispatch(allPosts())
+        dispatch(getUser())
   
         
     },[dispatch])
+
+    
     return(
         <>
           <div className="searchbox">
@@ -31,16 +35,21 @@ function AllPosts()
             <img src={search} onClick={filter}></img>
           </div>
         <div className="Post">
+   
       
         {posts &&
         posts.map(post=>(
-            
-       <PostCard key={post._id} post={post}/>   
+        
+       <PostCard key={post._id} post={post} url={`/post/${post._id}`} name="View Opportunity" name2="Apply" url2={`/createSubmission/${post._id}/${post.heading}`} />  
+       
+     
 
         ))}
+        
         </div>
           
         </>
     )
+        
 }
 export default AllPosts;

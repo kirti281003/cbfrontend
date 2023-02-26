@@ -4,15 +4,63 @@
     width:100vw;
 }
 .homehead{
-    width:30vw;
-    margin-left: auto;
-    margin-right: auto;
+    width:35vw;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: -4rem;
+    margin-left: 10rem;
 }
 .HomeContainer h1{
-    font-size:5rem;
-    text-align: center;
+    font-size:4.2rem;
+
+    color:white;
+    font-weight: 700;
 }
-.vectorleftlight{
+.homespan{
+    font-size:1.5rem;
+    font-weight:700;
+    color: white;
+}
+.homeright{
+    position: absolute;
+    right:3rem;
+    top:7rem;
+
+}
+.aimlist{
+    margin-top: 5rem;
+}
+.aim{
+    /* background-color: white; */
+    width:18rem;
+    display:inline-block;
+    font-size: 1.3rem;
+    margin-left: 4rem;
+    height:10rem;
+    padding:2.3rem;
+    border-radius: 40px;
+    box-shadow: 0px 0px 14px white;
+    font-weight: bold;
+    color:white
+    
+}
+.icon{
+    display: inline-block;
+    margin-right:1.5rem;
+}
+.buttonicon{
+    color:#5F85DB;
+}
+.aimcontent{
+    display: inline-block;
+}
+.aim:hover{
+    transform:scale(1.2);
+}
+.aim:hover .icon{
+    transform:scale(1.5);
+}
+/* .vectorleftlight{
     position: absolute;
     left:0;
     bottom: 0;
@@ -27,6 +75,13 @@
 .homeright{
     position: absolute;
     right:0;
+    bottom: 0;
+    height:25rem;
+
+}
+.homeleft{
+    position: absolute;
+    left:0;
     bottom: 0;
     height:25rem;
 
@@ -50,16 +105,49 @@
 .arrowImg{
     height:1rem;
 }
+.right{
+    position: absolute;
+    right:3rem;
+    top:25rem;
+}
+.rightdiv{
+    border:1px solid white;
+    font-size:2rem;
+    width:32rem;
+    color:white;
+    padding:1rem;
+    margin-top:2rem;
+    box-shadow:0px 0px 50px black;
+}
+.rightdiv:hover{
+    border:1px solid white;
+    font-size:2rem;
+    width:32rem;
+    background-color: black;
+    color:white;
+    padding:1rem;
+    margin-top:2rem;
+    box-shadow: 0px 0px 0px #000;
+}
+.rightdiv:hover .button_icon{
+transform: scale(1.2);
+}
+.button_icon{
+    margin-left: 5rem;
+    color:#5F85DB;
+}
+
 @media(max-width:1024px)
 {
     .HomeContainer{
         margin-top:10rem;
-        height:90vh;
+        height:80vh;
     }
     .homehead{
-        width:60vw;
+        width:90vw;
         margin-left: auto;
         margin-right: auto;
+        margin-top: -4rem;
     }
     .HomeContainer h1{
         font-size:3.3rem;
@@ -86,4 +174,117 @@
         height:15rem;
     
     }
+    .homeleft{
+        position: absolute;
+        right:0;
+        bottom:0rem;
+        height:15rem;
+    
+    }
+    .right{
+        position: absolute;
+        right:1rem;
+        top:23rem;
+    }
+    .rightdiv{
+        border:1px solid white;
+        font-size:1.5rem;
+        width:90vw;
+        color:white;
+        padding:1rem;
+        margin-top:2rem;
+    }
+    .rightdiv:hover{
+        border:1px solid white;
+        font-size:1.5rem;
+        width:90vw;
+        background-color: black;
+        color:white;
+        padding:1rem;
+        margin-top:2rem;
+        box-shadow: 0px 0px 0px #000;
+    }
+    .button_icon{
+        margin-left: 2rem;
+        color:#5F85DB;
+    }
+} */
+@media(max-width:700px)
+{
+
+    .HomeContainer{
+        margin-top: 4rem;
+        height:90vh;
+        width:100vw;
+        overflow-y: scroll;
+
+
+    }
+    .homehead{
+        width:90vw;
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin-top:0rem;
+ 
+        margin-left: 2rem;
+       z-index:10000;
+    }
+    .HomeContainer h1{
+        font-size:2rem;
+    
+        color:white;
+        font-weight: 700;
+        margin-bottom: 2rem;
+   
+ 
+    }
+    .homespan{
+        font-size:1rem;
+        font-weight:700;
+
+    }
+    .homeright{
+        position: absolute;
+        right:0rem;
+        top:5rem;
+        height:8rem;
+        z-index:-1;
+    
+    }
+    .aimlist{
+        margin-top: 5rem;
+        margin-left:-1rem;
+        
+    }
+    .aim{
+        /* background-color: white; */
+        width:18rem;
+        display:inline-block;
+        font-size: 1.2rem;
+
+        margin-bottom: 2rem;
+        height:8rem;
+        padding:1.5rem;
+        border-radius: 20px;
+        box-shadow: 0px 0px 14px black;
+        font-weight: bold;
+        
+    }
+    .icon{
+        display: inline-block;
+        margin-right:1.5rem;
+    }
+    .buttonicon{
+        color:#5F85DB;
+    }
+    .aimcontent{
+        display: inline-block;
+    }
+    .aim:hover{
+        transform:scale(1.2);
+    }
+    .aim:hover .icon{
+        transform:scale(1.5);
+    }
+
 }

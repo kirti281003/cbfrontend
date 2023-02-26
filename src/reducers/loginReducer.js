@@ -5,8 +5,7 @@ const initialState={
 
 }
 export const userReducer = (state = initialState, action) => {
- console.log(action.payload);
- console.log(action.type);
+
     switch (action.type) {
       case REGISTER_REQUEST:
     case LOGIN_REQUEST:
@@ -34,32 +33,52 @@ export const userReducer = (state = initialState, action) => {
                 isAuthenticated:false,
                 error: action.payload,
               };
+        case LOGOUT_REQUEST:
+          return{
+          loading:true,
+          isAuthenticated:true,
+
+        }
+        case LOGOUT_SUCCESS:
+          return{
+            ...state,
+            loading:false,
+            isAuthenticated:false,
+            user:{}
+          }
+        case LOGOUT_FAIL:
+          return{
+            loading:false,
+            isAuthenticated:true
+
+        }
         default:
                 return state;
     }
 }
 
-export const logoutReducer=(state={},action)=>
-{
-    switch(action.type)
-    {
-        case LOGOUT_REQUEST:
-        return{
-            loading:true,
-            isAuthenticated:true
-        }
-        case LOGOUT_SUCCESS:
-            return{
-                loading:false,
-                isAuthenticated:false,
-            }
-            case LOGOUT_FAIL:
-                return{
-                loading:false,
-                isAuthenticated:true,
-            }
-        default:
-            return state;
+// export const logoutReducer=(state={},action)=>
+// {
+//     switch(action.type)
+//     {
+//         case LOGOUT_REQUEST:
+//         return{
+//             loading:true,
+//             isAuthenticated:true
+//         }
+//         case LOGOUT_SUCCESS:
+//             return{
+//               ...state,
+//                 loading:false,
+//                 isAuthenticated:false,
+//             }
+//             case LOGOUT_FAIL:
+//                 return{
+//                 loading:false,
+//                 isAuthenticated:true,
+//             }
+//         default:
+//             return state;
 
-    }
-}
+//     }
+// }

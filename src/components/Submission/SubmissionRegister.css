@@ -1,6 +1,5 @@
 .postform{
     margin-top: 4rem;
-    overflow-y: scroll;
     display: flex;
     flex-wrap: wrap;
     margin-left: 13rem;
@@ -9,6 +8,7 @@
 .postform label{
     font-weight: bolder;
     font-size: 1.3rem;
+    color:white;
 }
 .login__field {
 	padding: 20px 0px;	
@@ -34,6 +34,20 @@
     margin-bottom: 3rem;
 
 }
+.sign__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+    border-right: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 20%;
+	transition: .2s;
+    margin-bottom: 3rem;
+    margin-right:2rem
+
+}
 
 .login__input:active,
 .login__input:focus,
@@ -51,7 +65,7 @@
 	transition: .2s;
 
 }
-.postform button{
+.submissionButton{
     width:18rem;
     height: 3rem;
     font-size: 1rem;
@@ -61,6 +75,9 @@
     font-weight: 700;
     margin-left: 4rem;
     border-radius: 20px;
+    position: absolute;
+    right:2rem;
+    bottom:0rem;
 }
 
 @media(max-width:700px)
@@ -70,7 +87,7 @@
         overflow-y: scroll;
         display: flex;
         flex-wrap: wrap;
-        margin-left:1.5rem;
+        margin-left:1rem;
     
     }
     .postform label{
@@ -90,13 +107,24 @@
     
     .login__input {
         border: none;
-        border-bottom: 2px solid #D1D1D4;
-        border-right: 2px solid #D1D1D4;
+        border: 2px solid #D1D1D4;
         background: none;
         padding: 10px;
         padding-left: 24px;
         font-weight: 700;
         width: 80%;
+        transition: .2s;
+        margin-bottom: 3rem;
+    
+    }
+    .sign__input {
+        border: none;
+        border: 2px solid #D1D1D4;
+        background: none;
+        padding: 10px;
+        padding-left: 24px;
+        font-weight: 700;
+        width: 50%;
         transition: .2s;
         margin-bottom: 3rem;
     
@@ -130,5 +158,19 @@
         margin-left: 1.5rem;
         border-radius: 20px;
         margin-bottom: 2rem;
+    }
+    .submissionButton{
+        width:18rem;
+        height: 3rem;
+        font-size: 1rem;
+        color:white;
+        background-color: #6287de;
+        text-align: center;
+        font-weight: 700;
+        margin-left: 4rem;
+        border-radius: 20px;
+        position: relative;
+        left:0.5rem;
+     
     }
 }

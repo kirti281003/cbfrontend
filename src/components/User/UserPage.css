@@ -3,14 +3,65 @@
     width:50vw;
     text-align: center;
     margin-top: 9rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #A6D1D1;
+
+  
     padding: 2rem;
-border-radius: 20px;
+    border-radius: 20px;
 
 }
-.userpagecontainer h1{
+.avatar{
+    height:13rem;
+    position: absolute;
+    left:3rem;
+    top:6rem;
+
+}
+.profiledetails{
+    margin-top:5rem;
+    position: absolute;
+    left:3rem;
+    color:white;
+}
+.profiledetails h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: -2rem;
+    color:white;
+}
+@media(max-width:700px)
+{.userpagecontainer
+    {
+        width:50vw;
+        text-align: center;
+        margin-top: 9rem;
+    
+      
+        padding: 2rem;
+        border-radius: 20px;
+    
+    }
+    .avatar{
+        height:13rem;
+        position: absolute;
+        left:5rem;
+        top:6rem;
+    
+    }
+    .profiledetails{
+        margin-top:5rem;
+        position: absolute;
+        left:4rem;
+        color:white;
+    }
+    .profiledetails h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: -2rem;
+        color:white;
+    }
+
+}
+/* .userpagecontainer h1{
     font-size: 1.7rem;
 }
 .profilename{
@@ -69,4 +120,4 @@ right:2rem;
         width:4rem;
         border-radius:50%;
     }
-}
+} */
