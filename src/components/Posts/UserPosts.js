@@ -15,6 +15,7 @@ function UserPosts()
     {
     // {dispatch(getUser())
         dispatch(userPosts())
+        dispatch(getUser())
     },[dispatch])
   
     return(

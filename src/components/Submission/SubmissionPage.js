@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getSubmission } from "../../actions/subAction";
+import { getUser } from "../../actions/userActions";
 import "./SubmissionPage.css";
 
 
@@ -14,6 +15,7 @@ const SubmissionPage=()=>{
     const{id}=useParams();
     useEffect(()=>{
            dispatch(getSubmission(id))
+           dispatch(getUser())
     },[dispatch])
     return(
         <>

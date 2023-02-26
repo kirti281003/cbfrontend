@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { postsubmissions, submissions } from "../../actions/subAction";
+import { getUser } from "../../actions/userActions";
 import AcceptRejectElement from "./AcceptRejectElement";
 
 const PostSubmissions=()=>
@@ -12,6 +13,7 @@ const PostSubmissions=()=>
     useEffect(()=>
     {
         dispatch(postsubmissions(id))
+        dispatch(getUser())
     },[dispatch])
 
     

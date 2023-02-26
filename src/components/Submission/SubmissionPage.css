@@ -56,3 +56,64 @@ margin-left: 1rem;
     margin-top: 1rem;
     text-shadow: 0px 0px 14px white;
 }
+@media(max-width:700px)
+{
+    .subPage{
+        height:100vh;
+    
+    }
+    .subBody{
+        display: inline-block;
+        width:90vw;
+        margin-left:1rem;
+        margin-top:2rem;
+        border:2px solid black;
+        padding:4rem;
+        background: linear-gradient(to left, #fff, #5f85db);
+        box-shadow: 0px 0px 24px black;
+        font-weight:bolder;
+    }
+    .subBody h2{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 600;
+    }
+    .subPage img{
+    position: relative;
+  left:1.3rem;
+    height:20rem;
+    margin-top: -7rem;
+    }
+    .linkSection{
+       position: relative;
+       margin-top: 9rem;
+       left:0rem;
+    }
+    .singleLink{
+    margin-bottom:0.5rem;
+    margin-left:4.5rem;
+    }
+    .linkhead{
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-right: 2.3rem;
+        color:#fff;
+    }
+    .linkSection h3{
+        text-align:center;
+        font-weight: bolder;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        color:#fff;
+    
+    }
+    .linkurl{
+        font-size: 1rem;
+    }
+    .status{
+        color:white;
+        margin-left:7rem;
+        margin-top: -1rem;
+        text-shadow: 0px 0px 14px white;
+    }
+}

@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { acceptsub, postsubmissions } from "../../actions/subAction";
+import { getUser } from "../../actions/userActions";
 import "./AcceptRejectElement.css";
 const AcceptRejectElement=({title,sub,id})=>{
     function viewsubfunc()
@@ -34,6 +36,9 @@ const AcceptRejectElement=({title,sub,id})=>{
         }
        
     }
+    useEffect(()=>{
+dispatch(getUser())
+    },[dispatch])
 return(
    
     <>

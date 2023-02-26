@@ -13,11 +13,11 @@ function Home()
 {const{isAuthenticated}=useSelector(state=>state.user);
 console.log(isAuthenticated);
     const dispatch=useDispatch();
-    // useEffect(()=>
-    // {
-    //     dispatch(getUser());
+    useEffect(()=>
+    {
+        dispatch(getUser());
 
-    // },[dispatch])
+    },[dispatch])
     // return(
     //     <>
     //         {/* <div className="HomeContainer">

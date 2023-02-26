@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { submissions } from "../../actions/subAction";
+import { getUser } from "../../actions/userActions";
 import SubElement from "./SubElement";
 
 const Submissions=()=>
@@ -9,6 +10,7 @@ const Submissions=()=>
     useEffect(()=>
     {
         dispatch(submissions())
+        dispatch(getUser());
     },[dispatch])
     return(
         <>

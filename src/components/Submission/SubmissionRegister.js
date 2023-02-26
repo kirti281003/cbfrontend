@@ -20,15 +20,10 @@ function SubmissionRegister()
     const[link3head,setLink3head]=useState("");
     const[link3,setLink3]=useState("");
     const links=[{title:link1head,url:link1},{title:link2head,url:link2},{title:link3head,url:link3}];
-    // useEffect(()=>
-    // {dispatch(getUser());
-      
-    //     if(error)
-    //     {
-    //         window.alert(error);
-    //     }    
+    useEffect(()=>
+    {dispatch(getUser());  
 
-    // },[error])
+    },[dispatch])
     const submitSub=(e)=>
     {e.preventDefault();
         dispatch(registerSub(body,JSON.stringify(links),photo,id,name))

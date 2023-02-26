@@ -29,6 +29,7 @@ function PostRegister()
     {e.preventDefault();
 
         dispatch(registerPost(heading,category,body,skills,deadline,steps,photo))
+        dispatch(getUser())
   
     }
 

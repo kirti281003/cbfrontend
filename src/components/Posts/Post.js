@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getPost, post } from "../../actions/postActions";
+import { getUser } from "../../actions/userActions";
 import "./Post.css";
 
 const Post=()=>{
@@ -10,6 +11,7 @@ const Post=()=>{
     const {id}=useParams();
     useEffect(()=>{
             dispatch(getPost(id));
+            dispatch(getUser());
 
     },[dispatch])
 
