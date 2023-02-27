@@ -17,6 +17,10 @@ function Signup()
     const registerSubmit=(e)=>
     {e.preventDefault();
         dispatch(register(email,password,name,username))
+        if(error)
+        {
+            window.alert(error);
+        }
 
   
     }
@@ -27,14 +31,11 @@ function Signup()
             window.alert("Successful");
             window.location.href=`/user`;
         }
-        if(error)
-        {
-            window.alert(error);
-        }
+
     
         
 
-    },[isAuthenticated,error])
+    },[isAuthenticated])
     // return(
     //     <>
     //     <div class="signupForm">

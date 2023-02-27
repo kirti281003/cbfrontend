@@ -15,6 +15,10 @@ function Login()
     const loginSubmit=(e)=>
     {e.preventDefault();
         dispatch(login(email,password))
+        if(error)
+        {
+            window.alert(error);
+        }
       
   
     }
@@ -25,12 +29,9 @@ function Login()
         
            
         }  
-        if(error)
-        {
-            window.alert(error);
-        }
+       
 
-    },[isAuthenticated,error,dispatch])
+    },[isAuthenticated])
     // return(
     //     <><div className="loginForm">
     //     <h1>Sign In With Email</h1>
