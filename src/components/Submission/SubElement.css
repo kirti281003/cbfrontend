@@ -227,3 +227,11 @@
     background-color: #6287de;
     font-weight: bolder;
   }
+  .deletesub{
+    border:none;
+    background: transparent;
+    margin-left: 5rem;
+  }
+  .delicon{
+    color:white
+  }

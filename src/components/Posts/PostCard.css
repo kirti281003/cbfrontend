@@ -361,6 +361,12 @@ background-color: white;
     position: relative;
     bottom:-1rem;
   }
+  .righttrash{
+  border:none;
+  margin-left: 18rem;
+  background:transparent;
+
+  }
   @media screen and (max-width: 64rem){
     .col{
       width: calc(33.333333% - 2rem);

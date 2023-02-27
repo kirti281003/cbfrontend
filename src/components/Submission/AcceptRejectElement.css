@@ -253,6 +253,12 @@ width:8vw;
 font-weight: 600;
 
   }
+  h5{
+    color:white;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
 @media(max-width:1024px)
 {.accept{
     background-color: #95B7A2;

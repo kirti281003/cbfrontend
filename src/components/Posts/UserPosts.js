@@ -24,7 +24,10 @@ function UserPosts()
                  
         {posts &&
         posts.map(post=>(
-            <PostCard post={post} url={`/post/${post._id}`} name="View Post" url2={`/postSubmission/${post._id}`} name2="View Submissions"/>
+            <>
+            <PostCard post={post} url={`/post/${post._id}`} name="View Post" url2={`/postSubmission/${post._id}`} name2="View Submissions" trash={<i class=" fas fa-trash"></i>}/>
+            
+            </>
         ))}
         </div>
         {/* <input type="submit" name="logout" onClick={logoutSubmit}/> */}

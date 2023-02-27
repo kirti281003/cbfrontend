@@ -44,9 +44,10 @@ return(
     <>
       
         <div class="flexcard flexcardGreen">
-            <div class="flexcardNumber flexcardNumberGreen">{sub.username}</div>
+            <div class="flexcardNumber flexcardNumberGreen">{sub.username} (<h5> {sub.accepted} </h5>)</div>
 
             <button className="viewsubbutton" onClick={viewsubfunc}>View Submission</button>
+            
             <div className="decision">
             <button className="accept" onClick={acceptpost}>Accept</button>
             <button className="reject" onClick={rejectpost}>Reject</button>

@@ -1,4 +1,4 @@
-import {GET_SUB_FAIL, GET_SUB_REQUEST, GET_SUB_SUCCESS, POST_SUB_FAIL,POST_SUB_REQUEST,POST_SUB_SUCCESS,USER_SUB_FAIL,USER_SUB_SUCCESS,USER_SUB_REQUEST,ALL_SUB_FAIL,ALL_SUB_REQUEST,ALL_SUB_SUCCESS,ACCEPTED_SUB_FAIL,ACCEPTED_SUB_REQUEST,ACCEPTED_SUB_SUCCESS} from "../constants/subConstants";
+import {GET_SUB_FAIL, GET_SUB_REQUEST, GET_SUB_SUCCESS, POST_SUB_FAIL,POST_SUB_REQUEST,POST_SUB_SUCCESS,USER_SUB_FAIL,USER_SUB_SUCCESS,USER_SUB_REQUEST,ALL_SUB_FAIL,ALL_SUB_REQUEST,ALL_SUB_SUCCESS,ACCEPTED_SUB_FAIL,ACCEPTED_SUB_REQUEST,ACCEPTED_SUB_SUCCESS, DELETE_SUB_REQUEST, DELETE_SUB_SUCCESS, DELETE_SUB_FAIL} from "../constants/subConstants";
 import axios from "axios";
 export const registerSub=(body,links,photo,id,name)=>async(dispatch)=>{
     try {
@@ -88,3 +88,25 @@ catch(error)
     })
 }
 }
+
+export const deleteSub=(id)=>async(dispatch)=>{
+
+    try{
+        dispatch({
+            type:DELETE_SUB_REQUEST
+        })
+const{data}=await axios.get(`/api/v1/sub/delete/${id}`);
+         dispatch({
+            type:DELETE_SUB_SUCCESS,
+            payload:data.message
+         })
+
+    }
+    catch(error){
+        dispatch({
+            type:DELETE_SUB_FAIL,
+            payload:error.response.data.error
+        })
+
+    }
+  }
