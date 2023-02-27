@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/api/*"
-  to = 
+  to = "https://earnsidemoneybackend.onrender.com"
   status = 200
   force = true
 
