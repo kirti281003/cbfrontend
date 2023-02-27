@@ -15,19 +15,20 @@ function Login()
     const loginSubmit=(e)=>
     {e.preventDefault();
         dispatch(login(email,password))
-        if(error)
-        {
-            window.alert(error);
-        }
+      
   
     }
     useEffect(()=>
     {
         if(isAuthenticated)
-        {  window.location.href=`/user/${user.username}`;
+        {  window.location.href=`/user`;
         
            
         }  
+        if(error)
+        {
+            window.alert(error);
+        }
 
     },[isAuthenticated,error,dispatch])
     // return(

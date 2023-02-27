@@ -19,7 +19,7 @@ function UserPosts()
     },[dispatch])
   
     return(
-        <> <h1>Posts By You</h1>
+        <> <h1 style={{color:"white"}}>Posts By You</h1>
                   <div class="Post">
                  
         {posts &&

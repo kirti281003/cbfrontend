@@ -26,7 +26,7 @@ return(
     <li><Link to="/about">About</Link></li>
     <li><Link to="/posts">Posts</Link></li>
     <li><Link to="/logout" onClick={logoutSubmit}>Logout</Link></li>
-    <li><Link to="/user/:username">User</Link></li>
+    <li><Link to="/user">User</Link></li>
     
   </ul>
 </nav>

@@ -44,7 +44,7 @@ console.log(isAuthenticated);
         <Route path="/about" element={<About/>}/>
         <Route path="/" element={<Home/>}/>
         <Route path="/explore" element={<Explore/>}/>
-        <Route path="/user/:username" element={<User/>}/>
+        <Route path="/user" element={<User/>}/>
         <Route path="/user/submissions" element={<Submissions/>}/>
         <Route path="/post/:id" element={<Post/>}/>
         <Route path="/getSubmission/:id" element={<SubmissionPage/>}/>
@@ -72,7 +72,7 @@ console.log(isAuthenticated);
             <Route path="/about" element={<About/>}/>
             <Route path="/" element={<Home/>}/>
             <Route path="/explore" element={<Explore/>}/>
-            <Route path="/user/:username" element={<User/>}/>
+            <Route path="/user" element={<User/>}/>
             <Route path="/post/:id" element={<Post/>}/>
             <Route path="/createSubmission/:id/:name" element={<SubmissionRegister/>}/>
             <Route path="/getSubmission/:id" element={<SubmissionPage/>}/>

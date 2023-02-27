@@ -27,6 +27,8 @@ function SubmissionRegister()
     const submitSub=(e)=>
     {e.preventDefault();
         dispatch(registerSub(body,JSON.stringify(links),photo,id,name))
+        window.alert("Successful Submission,Keep Checking Status On Your Profile")
+        window.location.href="/user"
     }
     return(
         <>
@@ -35,7 +37,7 @@ function SubmissionRegister()
                 <label>Write what you want the hirer to know</label>
                 <div class="login__field">
                 
-					<textarea type="text" rows="20" cols="50" class="textarea__input" onChange={(e)=>setBody(e.target.value)}
+					<textarea type="text" rows="20" cols="50" class="textarea__input" style={{color:"white"}} onChange={(e)=>setBody(e.target.value)}
                     />
 				</div>
                 </div>
@@ -43,23 +45,23 @@ function SubmissionRegister()
                 <div className="col">
              <label>Link 1</label>
                 <div class="login__field">
-                <input type="text" class="sign__input" placeholder=" " onChange={(e)=>setLink1head(e.target.value)}
+                <input type="text" class="sign__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink1head(e.target.value)}
                     />
-					<input type="text" class="login__input" placeholder=" " onChange={(e)=>setLink1(e.target.value)}
+					<input type="text" class="login__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink1(e.target.value)}
                     />
 				</div>
                 <label>Link 2</label>
                 <div class="login__field">
-                <input type="text" class="sign__input" placeholder=" " onChange={(e)=>setLink2head(e.target.value)}
+                <input type="text" class="sign__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink2head(e.target.value)}
                     />
-					<input type="text" class="login__input" placeholder=" " onChange={(e)=>setLink2(e.target.value)}
+					<input type="text" class="login__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink2(e.target.value)}
                     />
 				</div>
                 <label>Link 3</label>
                 <div class="login__field">
-                <input type="text" class="sign__input" placeholder=" " onChange={(e)=>setLink3head(e.target.value)}
+                <input type="text" class="sign__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink3head(e.target.value)}
                     />
-					<input type="text" class="login__input" placeholder=" " onChange={(e)=>setLink3(e.target.value)}
+					<input type="text" class="login__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink3(e.target.value)}
                     />
 				</div>
                 <label>Any Image You Want To Upload</label>

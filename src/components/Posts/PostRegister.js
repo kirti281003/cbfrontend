@@ -16,20 +16,19 @@ function PostRegister()
     const[steps,setsteps]=useState("");
     const[photo,setImage]=useState();
     const{loading,error,post}=useSelector(state=>state.post)
-    // useEffect(()=>
-    // {dispatch(getUser());
+    useEffect(()=>
+    {dispatch(getUser());
       
-    //     if(error)
-    //     {
-    //         window.alert(error);
-    //     }    
+     
 
-    // },[error])
+    },[dispatch])
     const submitPost=(e)=>
     {e.preventDefault();
-
+        
         dispatch(registerPost(heading,category,body,skills,deadline,steps,photo))
-        dispatch(getUser())
+        window.alert("Succesful Post");
+        window.location.href="/user"
+      
   
     }
 
@@ -61,25 +60,25 @@ function PostRegister()
             <label>Heading</label>
             <div class="login__field">
 					
-					<input type="text" class="login__input" onChange={(e)=>setHeading(e.target.value)}
+					<input type="text" class="login__input" style={{color:"white"}} onChange={(e)=>setHeading(e.target.value)}
                     />
 				</div>
                 <label>Category</label>
                 <div class="login__field">
 			
-					<input type="text" class="login__input" onChange={(e)=>setCategory(e.target.value)}
+					<input type="text" class="login__input" style={{color:"white"}} onChange={(e)=>setCategory(e.target.value)}
                     />
 				</div>
                 <label>Add all the information about opportunity here</label>
                 <div class="login__field">
                 
-					<textarea type="text" rows="10" cols="50" class="textarea__input" onChange={(e)=>setBody(e.target.value)}
+					<textarea type="text" rows="10" cols="50" class="textarea__input" style={{color:"white"}} onChange={(e)=>setBody(e.target.value)}
                     />
 				</div>
                 <label>Deadline</label>
             <div class="login__field">
 					
-					<input type="text" class="login__input" onChange={(e)=>setDeadline(e.target.value)}
+					<input type="text" class="login__input" style={{color:"white"}} onChange={(e)=>setDeadline(e.target.value)}
                     />
 				</div>
                 </div>
@@ -88,13 +87,13 @@ function PostRegister()
                 <label>Skills Required</label>
                 <div class="login__field">
                 
-					<textarea type="text" rows="5" cols="30" class="textarea__input" onChange={(e)=>setSkills(e.target.value)}
+					<textarea type="text" rows="5" cols="30" class="textarea__input" style={{color:"white"}} onChange={(e)=>setSkills(e.target.value)}
                     />
 				</div>
                 <label>Steps/Other Instructions</label>
                 <div class="login__field">
                 
-					<textarea type="text" rows="10" cols="50" class="textarea__input" onChange={(e)=>setsteps(e.target.value)}
+					<textarea type="text" rows="10" cols="50" class="textarea__input" style={{color:"white"}} onChange={(e)=>setsteps(e.target.value)}
                     />
 				</div>
                 <label>Any Image You Want To Upload</label>

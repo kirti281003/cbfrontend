@@ -43,7 +43,7 @@ window.location.href="/posts/user";
 					<div class="back">
                     <button className="righttrash" onClick={del}>{trash}</button>
 						<div class="inner">
-                        <div className="backbody">{post.body.substring(0,100)}...</div>
+                        <div className="backbody">{post.body.substring(0,50)}...</div>
 						  <p>
                           <Link to={url} className="linkButton">{name}</Link></p>
                           <Link to={url2} className="subLink">{name2}</Link>

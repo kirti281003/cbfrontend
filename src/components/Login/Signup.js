@@ -17,10 +17,7 @@ function Signup()
     const registerSubmit=(e)=>
     {e.preventDefault();
         dispatch(register(email,password,name,username))
-        if(error)
-        {
-            window.alert(error);
-        }
+
   
     }
     useEffect(()=>
@@ -28,8 +25,12 @@ function Signup()
         if(isAuthenticated)
         {
             window.alert("Successful");
+            window.location.href=`/user`;
         }
-       
+        if(error)
+        {
+            window.alert(error);
+        }
     
         
 
