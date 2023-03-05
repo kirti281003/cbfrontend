@@ -27,20 +27,29 @@ function AllPosts()
         
     },[dispatch])
 
-    
+
     return(
         <>
+          {/* <div className="searchbox">
+            <input type="text" placeholder="What are you looking for?" onChange={(e)=>setQuery(e.target.value)}/>
+            <img src={search} onClick={filter}></img>
+          </div> */}
+         
+          <div className="gradient">
+          <h1>FIND OPPORTUNITIES</h1>
           <div className="searchbox">
             <input type="text" placeholder="What are you looking for?" onChange={(e)=>setQuery(e.target.value)}/>
             <img src={search} onClick={filter}></img>
           </div>
+          </div>
+
         <div className="Post">
    
       
         {posts &&
         posts.map(post=>(
         
-       <PostCard key={post._id} post={post} url={`/post/${post._id}`} name="View Opportunity" name2="Apply" url2={`/createSubmission/${post._id}/${post.heading}`} />  
+       <PostCard key={post._id} post={post} url={`/post/${post._id}`} name="View" name2="Apply" url2={`/createSubmission/${post._id}/${post.heading}`} />  
        
      
 
@@ -50,6 +59,7 @@ function AllPosts()
           
         </>
     )
+       
         
 }
 export default AllPosts;

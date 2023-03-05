@@ -1,3 +1,145 @@
+
+.postcard{
+    background:#282828;
+    box-shadow:0px 0px  10px black;
+    border:1px solid black;
+    height:21vw;;
+    width:18vw;
+
+}
+.postcard h1{
+    text-align: center;
+    color: white;
+    background-color: #247A4D;
+    border-radius:5px;
+    padding:0.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    width:10rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.postcard h3{
+    margin-top:1rem;
+    font-size: 1.2rem;
+    color:white;
+    text-align: center;
+}
+.postcard p{
+    margin: 1rem;
+    color:white;
+    
+}
+.buttonsecion{
+    margin:3rem;
+}
+.linkButton{
+    background-color: white;
+    color:#247A4D;
+    text-decoration: none;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 1.5rem;
+    margin-top: 2rem;
+    position: relative;
+    left:1rem;
+    border-radius: 5px;
+
+}
+.subLink{
+    background-color: #247A4D;
+    color:white;
+    text-decoration: none;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+   position: relative;
+ left:1.5rem;
+ border-radius: 5px;
+}
+h6{
+    margin-top:1rem;
+    margin-bottom:-0.4rem;
+    margin-left: 1rem;
+    color:white
+}
+@media(max-width:700px)
+{
+    
+.postcard{
+    background:#282828;
+    box-shadow:0px 0px  10px black;
+    border:1px solid black;
+    height:80vw;;
+    width:80vw;
+    margin-bottom: 3rem;
+
+}
+.postcard h1{
+    text-align: center;
+    color: white;
+    background-color: #247A4D;
+    border-radius:5px;
+    padding:0.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    width:10rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.postcard h3{
+    margin-top:1rem;
+    font-size: 1.2rem;
+    color:white;
+    text-align: center;
+}
+.postcard p{
+    margin: 1rem;
+    color:white;
+    
+}
+.buttonsecion{
+    margin:3rem;
+}
+.linkButton{
+    background-color: white;
+    color:#247A4D;
+    text-decoration: none;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 1.5rem;
+    margin-top: 2rem;
+    position: relative;
+    left:1rem;
+    border-radius: 5px;
+
+}
+.subLink{
+    background-color: #247A4D;
+    color:white;
+    text-decoration: none;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+   position: relative;
+ left:1.5rem;
+ border-radius: 5px;
+}
+h6{
+    margin-top:1rem;
+    margin-bottom:-0.4rem;
+    margin-left: 1rem;
+    color:white
+}
+}
 /* .flexcard {
     display: flex;
     flex-direction: column;
@@ -150,7 +292,7 @@
       font-family: 'Jost', sans-serif;
       font-size: 15px;
   } */
-  *{
+  /* *{
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -384,4 +526,4 @@ background-color: white;
       width: 100%;
       margin: 0 0 2rem 0;
     }
-  }
+  } */

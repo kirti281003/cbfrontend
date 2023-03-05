@@ -1,4 +1,4 @@
-.flexbox {
+/* .flexbox {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -55,9 +55,9 @@
     top: 0px;
     border-radius: 50px 0px 0px 50px;
     z-index: -1;
-  /* background: #95B7A2; *//* background: -webkit-linear-gradient(bottom, #95B7A2, #AED2BC); */
+
     background: -moz-linear-gradient(bottom, #95B7A2, #AED2BC);
-  /* background: linear-gradient(to top, #95B7A2, #AED2BC); */;
+
   }
   
   .flexcardNumber:after {
@@ -84,206 +84,135 @@
   
   /* GREEN CARD */
   
-  .flexcardGreen {
-    background: #f9fbfa;
-    box-shadow: 4px 4px 4px #6287de;
+  .acceptcard{
+    background-color: #282828;
+    box-shadow: 0px 0px 12px black;
+    border:1px solid black;
+    width:16vw;
+    height:15vw;
+    border-radius:10px;
+
   }
-  
-  .flexcardNumberGreen {
-    background: #FCFCFC;
-    background: -webkit-linear-gradient(right, black, #6287de);
-    background: -moz-linear-gradient(right, black, #6287de);
-    background: linear-gradient(to left, black, #6287de);
-    box-shadow: 0px 2px 2px #6287de;
-  }
-  
-  .flexcardNumberGreen:before {
-    background: #6287de;
-  }
-  
-  .flexcardNumberGreen:after {
-    background: #87a9f8;
-  }
-  
-  /* BLUE CARD */
-  
-  .flexcardBlue {
-    background: #f7ffff;
-   box-shadow: 4px 8px 1px #92E8EB;
-  }
-  
-  .flexcardNumberBlue {
-    background: #FDFFFE;
-    background: -webkit-linear-gradient(right, #FDFFFE, #92E8EB);
-    background: -moz-linear-gradient(right, #FDFFFE, #92E8EB);
-    background: linear-gradient(to left, #FDFFFE, #92E8EB);
-    box-shadow: 0px 2px 2px #92E8EB;
-  }
-  
-  .flexcardNumberBlue:before {
-    background: #92E8EB;
-  }
-  
-  .flexcardNumberBlue:after {
-    background: #71bdbf;
-  }
-  
-  /* ORANGE CARD */
-  
-  .flexcardOrange {
-    background: #fdf8f3;
-   box-shadow: 4px -2px 1px #F68404;
-  }
-  
-  .flexcardNumberOrange {
-    background: #FDFFFE;
-    background: -webkit-linear-gradient(right, #FDFFFE, #F68404);
-    background: -moz-linear-gradient(right, #FDFFFE, #F68404);
-    background: linear-gradient(to left, #FDFFFE, #F68404);
-    box-shadow: 0px 2px 2px #F68404;
-  }
-  
-  .flexcardNumberOrange:before {
-    background: #F68404;
-  }
-  
-  .flexcardNumberOrange:after {
-    background: #d06f02;
-  }
-  
-  /* PİNK CARD */
-  
-  .flexcardPink {
-    background: #fffafd;
-    position: relative;
-      box-shadow: 2px 2px 1px #F34EAE ;
-      border-radius: 20px 20px 0px 20px;
-  }
-  .flexcardPink:before {
-      content: '';
-      width: 0px;
-      height: 50px;
-      /* background: red; */
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      border-left: 100px solid transparent;
-      border-bottom: 90px solid #F34EAE;
-  }
-  .flexcardNumberPink {
-    background: #FDFFFE;
-    background: -webkit-linear-gradient(right, #FDFFFE, #F34EAE);
-    background: -moz-linear-gradient(right, #FDFFFE, #F34EAE);
-    background: linear-gradient(to left, #FDFFFE, #F34EAE);
-    box-shadow: 0px 2px 2px #F34EAE;
-  }
-  
-  .flexcardNumberPink:before {
-    background: #F34EAE;
-  }
-  
-  .flexcardNumberPink:after {
-    background: #d24095;
-  }
-  
-  /* RESPONSİVE */
-  
-  @media only screen and (max-width: 800px) {
-  
-    .flexcard {
-      width: 35%;
-      margin-top: 20px;
-    }
-  
-    img.flexcardimgItem {
-      width: 30%;
-    }
-  
-  }
-  
-  @media only screen and (max-width: 500px) {
-  
-    .flexcard {
-      width: 70%;
-    }
-  
-  
-  }
-  footer {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      margin: 50px;
-      font-family: 'Jost', sans-serif;
-      font-size: 15px;
-  }
-  .viewsubbutton{
-    padding:1rem;
-    border-radius: 20px;
-    width:15rem;
+  .namecard{
+    background-color: #247A4D;
+    color:white;
+    width:10rem;
+    height:1.8rem;
+    border-radius:5px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
-    border:none;
-    background-color: #6287de;
-    font-weight: bolder;
+    margin-top: 2rem;
+  }
+  .viewsubbutton{
+    background-color: none;
+    margin-left: 5rem;
+  }
+  .acceptcard h1{
+    color:white;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+    margin-left:4.5rem;
+ 
+  }
+  .arrow{
+    margin-left: 2rem;
+  }
+  .acceptcard h6{
+    color:white;
+    font-size: 1.2rem;
+    margin-top:1rem;
+    text-align: center;
+  }
+  .decision{
+    width:15vw;
+    margin-top:2rem;
   }
   .accept{
-    background-color: #95B7A2;
-    text-decoration: none;
-    padding: 0.5rem;
-border:none;
-border-radius:10px;
-width:8vw;
-margin-top: 2rem;
-position: relative;
-left:2rem;
-font-weight: 600;
-display: inline-block;
-  }
-  .reject{
-    background-color:rgb(254, 73, 73);
-    text-decoration: none;
-    padding: 0.5rem;
-border:none;
-border-radius:10px;
-position: relative;
-right:-3.5rem;
-width:8vw;
-font-weight: 600;
-
-  }
-  h5{
+    background-color: #247A4D;
     color:white;
-    margin-top: 0.5rem;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
-  }
-@media(max-width:1024px)
-{.accept{
-    background-color: #95B7A2;
-    text-decoration: none;
-    padding: 0.5rem;
-border:none;
-border-radius:10px;
-width:22vw;
-margin-top: 2rem;
-position: relative;
-left:2rem;
-font-weight: 600;
-display: inline-block;
+    text-align: center;
+    width:5rem;
+    border: none;
+    margin-left:2rem;
+    margin-right:1.5rem;
+    padding: 0.4rem;
   }
   .reject{
-    background-color:rgb(254, 73, 73);
-    text-decoration: none;
-    padding: 0.5rem;
-border:none;
-border-radius:10px;
-position: relative;
-right:-3.5rem;
-width:22vw;
-font-weight: 600;
-
+    background-color: #6F0000;
+    color:white;
+    text-align: center;
+    width:5rem;
+    border: none;
+    padding: 0.4rem;
+    
   }
-
-}
+  @media(max-width:700px)
+  {
+    .acceptcard{
+        background-color: #282828;
+        box-shadow: 0px 0px 12px black;
+        border:1px solid black;
+        width:70vw;
+        height:60vw;
+        border-radius:10px;
+    
+      }
+      .namecard{
+        background-color: #247A4D;
+        color:white;
+        width:10rem;
+        height:1.8rem;
+        border-radius:5px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+      }
+      .viewsubbutton{
+        background-color: none;
+        margin-left: 5rem;
+      }
+      .acceptcard h1{
+        color:white;
+        font-size: 1.5rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0;
+        margin-left:4.5rem;
+     
+      }
+      .arrow{
+        margin-left: 2rem;
+      }
+      .acceptcard h6{
+        color:white;
+        font-size: 1.2rem;
+        margin-top:1rem;
+        text-align: center;
+      }
+      .decision{
+        width:70vw;
+        margin-top:2rem;
+      }
+      .accept{
+        background-color: #247A4D;
+        color:white;
+        text-align: center;
+        width:5rem;
+        border: none;
+        margin-left:1.5rem;
+        
+        padding: 0.4rem;
+      }
+      .reject{
+        background-color: #6F0000;
+        color:white;
+        text-align: center;
+        width:5rem;
+        border: none;
+        padding: 0.4rem;
+        margin-left: 2rem;
+        
+      }
+  }

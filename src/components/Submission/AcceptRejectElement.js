@@ -39,14 +39,32 @@ const AcceptRejectElement=({title,sub,id})=>{
     useEffect(()=>{
 dispatch(getUser())
     },[dispatch])
-return(
+// return(
    
-    <>
+//     <>
       
-        <div class="flexcard flexcardGreen">
-            <div class="flexcardNumber flexcardNumberGreen">{sub.username} (<h5> {sub.accepted} </h5>)</div>
+//         <div class="flexcard flexcardGreen">
+//             <div class="flexcardNumber flexcardNumberGreen">{sub.username} (<h5> {sub.accepted} </h5>)</div>
 
-            <button className="viewsubbutton" onClick={viewsubfunc}>View Submission</button>
+//             <button className="viewsubbutton" onClick={viewsubfunc}>View Submission</button>
+            
+//             <div className="decision">
+//             <button className="accept" onClick={acceptpost}>Accept</button>
+//             <button className="reject" onClick={rejectpost}>Reject</button>
+//             </div>
+                    
+//                 </div>
+           
+//     </>
+// )
+return(
+    <>
+        <div class="acceptcard">
+            <div class=" namecard">{sub.username} </div>
+               <h1>{sub.username}<i class=" arrow fa fa-regular fa-arrow-up-right-from-square" onClick={viewsubfunc}></i></h1>
+               <h6>Date : 1st March,2023</h6>
+
+             
             
             <div className="decision">
             <button className="accept" onClick={acceptpost}>Accept</button>
@@ -54,7 +72,7 @@ return(
             </div>
                     
                 </div>
-           
+
     </>
 )
 }

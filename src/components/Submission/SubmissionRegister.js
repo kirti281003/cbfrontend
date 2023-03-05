@@ -32,46 +32,53 @@ function SubmissionRegister()
     }
     return(
         <>
-            <form className="postform" action="/createPost" method="POST" onSubmit={submitSub}>
-            <div className="col">
-                <label>Write what you want the hirer to know</label>
-                <div class="login__field">
-                
-					<textarea type="text" rows="20" cols="50" class="textarea__input" style={{color:"white"}} onChange={(e)=>setBody(e.target.value)}
+            <form className="subform" action="/createPost" method="POST" onSubmit={submitSub}>
+      <h1>Submit Application</h1>
+              <hr></hr>
+                <div class="login_field">
+                <label>Pitch</label>
+					<textarea type="text" rows="3" cols="70" class="textareainput" style={{color:"white"}} onChange={(e)=>setBody(e.target.value)}
                     />
 				</div>
-                </div>
+              
 
-                <div className="col">
-             <label>Link 1</label>
-                <div class="login__field">
+           
+         
+                <div class="login_field">
+                <label>Link 1</label>
                 <input type="text" class="sign__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink1head(e.target.value)}
                     />
-					<input type="text" class="login__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink1(e.target.value)}
+					<input type="text" class="logininput" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink1(e.target.value)}
                     />
 				</div>
+                
+                <div class="login_field">
                 <label>Link 2</label>
-                <div class="login__field">
                 <input type="text" class="sign__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink2head(e.target.value)}
                     />
-					<input type="text" class="login__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink2(e.target.value)}
+					<input type="text" class="logininput" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink2(e.target.value)}
                     />
 				</div>
+              
+                <div class="login_field">
                 <label>Link 3</label>
-                <div class="login__field">
                 <input type="text" class="sign__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink3head(e.target.value)}
                     />
-					<input type="text" class="login__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink3(e.target.value)}
+					<input type="text" class="logininput" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink3(e.target.value)}
                     />
 				</div>
-                <label>Any Image You Want To Upload</label>
-                <div class="login__field">
-					
-					<input type="file" class="login__input" placeholder=" "  onChange={(e)=>setImage(e.target.files[0])}
+                
+                <div class="login_field">
+                <label>Add Image</label>
+					<input type="file" class="logininput" placeholder=" "  onChange={(e)=>setImage(e.target.files[0])}
                     />
 				</div>
-                <button className="submissionButton">Create Submission</button>
-                </div>
+                <hr></hr>
+                <div className="button__section">
+                <button className="green1">Submit</button>
+                <button className="white">Close</button>
+            </div>
+               
             </form>
         </>
     )

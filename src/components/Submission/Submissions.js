@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { submissions } from "../../actions/subAction";
 import { getUser } from "../../actions/userActions";
 import SubElement from "./SubElement";
+import "./PostSubmissions.css";
 
 const Submissions=()=>
 {const dispatch=useDispatch();
@@ -14,6 +15,9 @@ const Submissions=()=>
     },[dispatch])
     return(
         <>
+        <div className="gradient">
+          <h1>SUBMISSIONS</h1>
+          </div>
         <div className="flexbox">
         {
             subs &&

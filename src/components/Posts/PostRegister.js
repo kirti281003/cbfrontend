@@ -32,79 +32,97 @@ function PostRegister()
   
     }
 
+
     // return(
-    //     <><div className="loginForm">
-    //           <h1>Create A Post</h1>
-    //         <form  onSubmit={submitPost} method="POST" action="/">
-    //             <input className="loginInput" type="text" name="heading" placeholder="Enter Heading" 
-    //             onChange={(e)=>setHeading(e.target.value)}></input>
-    //             <input className="loginInput" type="text" name="category" placeholder="Enter Category"
-    //             onChange={(e)=>setCategory(e.target.value)}></input>
-    //              <input className="loginInput" type="text" name="body" placeholder="Enter Request"
-    //             onChange={(e)=>setBody(e.target.value)}></input>
-    //              <div >
-    //             <button type="submit" name="submit" className="logSubmit">Post</button>
+    //     <>
+    //         <form className="postform" action="/createPost" method="POST" onSubmit={submitPost}>
+    //         <div className="col">
+    //         <label>Heading</label>
+    //         <div class="loginfield">
+					
+	// 				<input type="text" class="login__input" style={{color:"white"}} onChange={(e)=>setHeading(e.target.value)}
+    //                 />
+	// 			</div>
+    //             <label>Category</label>
+    //             <div class="loginfield">
+			
+	// 				<input type="text" class="login__input" style={{color:"white"}} onChange={(e)=>setCategory(e.target.value)}
+    //                 />
+	// 			</div>
+    //             <label>Add all the information about opportunity here</label>
+    //             <div class="loginfield">
+                
+	// 				<textarea type="text" rows="10" cols="50" class="textarea__input" style={{color:"white"}} onChange={(e)=>setBody(e.target.value)}
+    //                 />
+	// 			</div>
+    //             <label>Deadline</label>
+    //         <div class="loginfield">
+					
+	// 				<input type="text" class="login__input" style={{color:"white"}} onChange={(e)=>setDeadline(e.target.value)}
+    //                 />
+	// 			</div>
     //             </div>
-              
+    //             <div className="col">
+       
+    //             <label>Skills Required</label>
+    //             <div class="loginfield">
+                
+	// 				<textarea type="text" rows="5" cols="30" class="textarea__input" style={{color:"white"}} onChange={(e)=>setSkills(e.target.value)}
+    //                 />
+	// 			</div>
+    //             <label>Steps/Other Instructions</label>
+    //             <div class="loginfield">
+                
+	// 				<textarea type="text" rows="10" cols="50" class="textarea__input" style={{color:"white"}} onChange={(e)=>setsteps(e.target.value)}
+    //                 />
+	// 			</div>
+    //             <label>Any Image You Want To Upload</label>
+    //         <div class="loginfield">
+					
+	// 				<input type="file" class="login__input" placeholder=" " onChange={(e)=>setImage(e.target.files[0])}
+    //                 />
+	// 			</div>
+    //             <button>Create Post</button>
+    //             </div>
     //         </form>
-    //         </div>
-    //         <div className="loginImage">
-    //         <img src={loginImage}></img>
-    //     </div>
     //     </>
     // )
     return(
         <>
-            <form className="postform" action="/createPost" method="POST" onSubmit={submitPost}>
-            <div className="col">
-            <label>Heading</label>
-            <div class="login__field">
-					
-					<input type="text" class="login__input" style={{color:"white"}} onChange={(e)=>setHeading(e.target.value)}
-                    />
-				</div>
-                <label>Category</label>
-                <div class="login__field">
-			
-					<input type="text" class="login__input" style={{color:"white"}} onChange={(e)=>setCategory(e.target.value)}
-                    />
-				</div>
-                <label>Add all the information about opportunity here</label>
-                <div class="login__field">
-                
-					<textarea type="text" rows="10" cols="50" class="textarea__input" style={{color:"white"}} onChange={(e)=>setBody(e.target.value)}
-                    />
-				</div>
-                <label>Deadline</label>
-            <div class="login__field">
-					
-					<input type="text" class="login__input" style={{color:"white"}} onChange={(e)=>setDeadline(e.target.value)}
-                    />
-				</div>
-                </div>
-                <div className="col">
-       
-                <label>Skills Required</label>
-                <div class="login__field">
-                
-					<textarea type="text" rows="5" cols="30" class="textarea__input" style={{color:"white"}} onChange={(e)=>setSkills(e.target.value)}
-                    />
-				</div>
-                <label>Steps/Other Instructions</label>
-                <div class="login__field">
-                
-					<textarea type="text" rows="10" cols="50" class="textarea__input" style={{color:"white"}} onChange={(e)=>setsteps(e.target.value)}
-                    />
-				</div>
-                <label>Any Image You Want To Upload</label>
-            <div class="login__field">
-					
-					<input type="file" class="login__input" placeholder=" " onChange={(e)=>setImage(e.target.files[0])}
-                    />
-				</div>
-                <button>Create Post</button>
-                </div>
-            </form>
+             <form className="postform" action="/createPost" method="POST" onSubmit={submitPost}>
+              <h1>Post Form</h1>  
+             <hr></hr>
+             <div class="login_field">
+             <label>Heading</label>
+             <input type="text" class="logininput" style={{color:"white"}} onChange={(e)=>setHeading(e.target.value)} />
+			</div>
+            <div class="login_field">
+			<label>Category</label>
+            <input type="text" class="logininput" style={{color:"white"}} onChange={(e)=>setCategory(e.target.value)}/>
+            </div>
+            <div class="login_field">
+            <label>Description</label> 
+    		<textarea type="text" rows="3" cols="100" class="textareainput" style={{color:"white"}} onChange={(e)=>setBody(e.target.value)}/>
+    		</div>
+            <div class="login_field">
+            <label>Deadline</label>		
+            <input type="text" class="logininput" style={{color:"white"}} onChange={(e)=>setDeadline(e.target.value)} />
+            </div>
+            <div class="login_field">
+            <label>Skills</label>  
+	       <input type="text"  class="logininput" style={{color:"white"}} onChange={(e)=>setSkills(e.target.value)} />
+           </div>
+           <div class="login_field">
+           <label>Add Image</label>		
+            <input type="file" class="logininput" placeholder=" " onChange={(e)=>setImage(e.target.files[0])}/>
+            </div>
+            <hr style={{color:"white"}}></hr>
+            
+            <div className="button_section">
+                <button className="green">Submit</button>
+                <button className="white">Close</button>
+            </div>
+             </form>
         </>
     )
 }

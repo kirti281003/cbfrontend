@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { postsubmissions, submissions } from "../../actions/subAction";
 import { getUser } from "../../actions/userActions";
 import AcceptRejectElement from "./AcceptRejectElement";
+import "./PostSubmissions.css";
 
 const PostSubmissions=()=>
 {const dispatch=useDispatch();
@@ -19,6 +20,9 @@ const PostSubmissions=()=>
     
     return(
         <>
+         <div className="gradient">
+          <h1>YOUR SUBMISSIONS</h1>
+          </div>
          <div className="flexbox">
         {
             subs &&

@@ -13,16 +13,27 @@ const SubElement=({title,sub})=>{
             dispatch(deleteSub(sub._id))
             window.location.href="/user/submissions";
     }
-return(
+// return(
    
-    <>
+//     <>
       
-        <div class="flexcard1 flexcardGreen">
-            <div class="flexcardNumber flexcardNumberGreen">{sub.postname} <button className="deletesub" onClick={del}><i class="delicon fas fa-trash"></i></button></div>
-            <div class="flex flexcardTitle"></div>
-                    <button className="viewsubbutton1" onClick={viewsubfunc}>View Submission</button>
-                </div>
+//         <div class="flexcard1 flexcardGreen">
+//             <div class="flexcardNumber flexcardNumberGreen">{sub.postname} <button className="deletesub" onClick={del}><i class="delicon fas fa-trash"></i></button></div>
+//             <div class="flex flexcardTitle"></div>
+//                     <button className="viewsubbutton1" onClick={viewsubfunc}>View Submission</button>
+//                 </div>
            
+//     </>
+// )
+return(
+    <>
+        <div class="acceptcard">
+            <div class=" namecard">{sub.username} </div>
+               <h1>{sub.username}<i class=" arrow fa fa-regular fa-arrow-up-right-from-square" onClick={viewsubfunc}></i></h1>
+               <h6>Date : 1st March,2023</h6>
+                    
+                </div>
+
     </>
 )
 }

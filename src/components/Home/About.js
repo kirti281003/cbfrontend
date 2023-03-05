@@ -1,5 +1,7 @@
 import VectorLeft from "../../images/VectorLeft.png";
 import VectorRight from "../../images/VectorRight.png";
+import topright from "../../images/topright.png";
+import bottomleft from "../../images/bottomleft.png";
 import "./About.css";
 function About(){
     return(
@@ -16,8 +18,8 @@ function About(){
             The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
             </div>
         </div>
-        <img src={VectorLeft} className="vectorleft"></img>
-        <img src={VectorRight} className="vectorright"></img>
+        <img src={topright} className="topright"></img>
+        <img src={bottomleft} className="bottomleft"></img>
 
         </>
     )

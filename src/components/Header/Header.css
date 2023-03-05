@@ -66,20 +66,38 @@ background:transparent;
 }
 body {
   font-family:montserrat;
+
 }
 nav {
   height:80px;
   /* background: rgb(33, 32, 32); */
-  width:100%;
- 
+  width:100vw;
 }
-label.logo {
+label.logo img{
   /* color:white;
   line-height:80px;
   font-size: 35px;
   padding:0 100px;
   font-weight:bold; */
-margin-top: -1.5rem;
+margin-top: -3rem;
+margin-left: 3rem;
+}
+.clubname{
+    display: inline-block;
+    margin-left:1rem;
+    margin-top: 1rem;
+}
+.clubname h3{
+    margin-top:-2rem;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1.6rem;
+}
+.clubname h2{
+    margin-top:0rem;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1.6rem;
 }
 nav ul {
   float: right;
@@ -89,7 +107,7 @@ nav ul {
 nav ul li {
   line-height:80px;
   display:inline-block;
-  margin:0 2rem;
+  margin:-1rem 2rem;
 }
 nav ul li a {
   text-transform:uppercase;
@@ -101,10 +119,9 @@ font-weight: bold;
   text-decoration: none;
 }
 a.active,a:hover {
-  background: #5F85DB;
+  background: #1C603F;
   transition:0.5s;
-  border-radius:20px;
-  text-decoration: underline;
+
 }
 .checkbtn {
   font-size:30px;
@@ -114,18 +131,79 @@ a.active,a:hover {
   margin-right:40px;
   cursor:pointer;
   display:none;
+  background: #1C603F;
+
 }
 #check {
   display:none;
 }
+.borderlinks{
+    display: inline-block;
+    border:1px solid white;
+    border-radius:60px;
+    padding:0rem;
+    margin-top: 1rem;
+    height:3.2rem;
+}
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    width:auto;
+    height:auto;
+    font-size:1.5rem;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #282828;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a{
+    color: black;
+  
+    text-decoration: none;
+    display: block;
+margin-top: -6rem;
+    font-size: 0.7rem;
+
+}
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 @media (max-width:952px) {
     nav{
         background-color: black;
     }
  
   label.logo {
-    /* font-size:30px;
-    padding-left:50px; */
+    font-size:30px;
+    padding-left:50px; 
+margin-top: 0.5rem;
+      margin-left: -6rem;
+
+  }
+  label.logo img{
+    height:2rem
   }
   nav ul li a {
     font-size:16px;
@@ -134,7 +212,11 @@ a.active,a:hover {
 @media (max-width:858px) {
   .checkbtn {
     display:block;
+    position: absolute;
+    right:0;
+    background-color: transparent;
   }
+
   ul {
     position: fixed;
     height:100vh;
@@ -160,4 +242,39 @@ a.active,a:hover {
   #check:checked ~ ul {
     left:0;
   }
+  .clubname{
+    display: inline-block;
+    margin-left:0rem;
+    margin-top: 0rem;
+}
+.clubname h3{
+    margin-top:-3rem;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1rem;
+}
+.clubname h2{
+    margin-top:0rem;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1rem;
+}
+.borderlinks{
+    display: inline-block;
+    border:0px solid white;
+    border-radius:60px;
+    padding:0rem;
+    margin-top: 1rem;
+    height:3.2rem;
+}
+.dropdown-content a{
+    color: black;
+  
+    text-decoration: none;
+    display: block;
+margin-top:-0.7rem;
+    font-size: 0.7rem;
+
+}
+
 }

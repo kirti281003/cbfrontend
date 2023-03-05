@@ -1,3 +1,228 @@
+.loginContainer{
+    background-color: #282828;
+    height:80vh;
+}
+.spiralleft{
+    position:absolute;
+    left:0;
+    top:6rem;
+}
+.login{
+    position: absolute;
+    right:15rem;
+    top:8rem;
+    display: inline-block;
+    padding:4rem;
+
+
+}
+.logintop span{
+    font-size: 1rem;
+    color:white;
+    
+}
+.logintop h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color:white;
+    margin-left: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat';
+font-style: normal;
+}
+.signup{
+    text-decoration: none;
+    color:#1AEB7D;
+    margin-left:0.5rem;
+}
+.loginhead{
+    font-size: 1.2rem;
+    color:white;
+    margin-bottom:1rem;
+   margin-left: 0rem;
+   margin-top: 2rem;
+}
+.logininput{
+    width:20rem;
+    border-radius:10px;
+    height:2.5rem;
+    margin-top:-7rem;
+    background:transparent;
+    border:1px solid white;
+}
+.loginsubmit{
+    margin-top: 2rem;
+    width:20rem;
+    height:2.5rem;
+    background-color: #247a4d;
+    color:white;
+    border-radius:10px;
+    border:none
+
+}
+.sign{
+
+    width:30rem;
+    margin-left:5rem;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+  
+}
+.spiralright{
+    position:absolute;
+    right:0;
+    top:6rem;
+}
+.signinput{
+    background: transparent;
+    border:1px solid white;
+    width:25rem;
+    border-radius: 10px;
+    height:2.5rem;
+}
+.signtop h1{
+    margin-left:0rem;
+    color:white;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+.signtop span{
+    color:white;
+}
+.signhead{
+    color:white;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+}
+.signsubmit{
+    margin-top: 2rem;
+    width:25rem;
+    height:2.5rem;
+    background-color: #247a4d;
+    color:white;
+    border-radius:10px;
+    border:none
+}
+@media(max-width:700px)
+{
+    .loginContainer{
+        background-color: #282828;
+        height:80vh;
+    }
+    .spiralleft{
+        position:absolute;
+        left:0;
+        top:6rem;
+        display: none;
+    }
+    .login{
+        position: absolute;
+        right:0rem;
+        top:8rem;
+        display: inline-block;
+        padding:2rem;
+    
+    
+    }
+    .logintop span{
+        font-size: 1rem;
+        color:white;
+        
+    }
+    .logintop h1{
+        font-size: 2rem;
+        font-weight: 600;
+        color:white;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-family: 'Montserrat';
+    font-style: normal;
+    }
+    .signup{
+        text-decoration: none;
+        color:#1AEB7D;
+        margin-left:0.5rem;
+    }
+    .loginhead{
+        font-size: 1.2rem;
+        color:white;
+        margin-bottom:1rem;
+       margin-left: 0rem;
+    }
+    .logininput{
+        width:20rem;
+        border-radius:10px;
+        height:2.5rem;
+        margin-top:-7rem;
+        background:transparent;
+        border:1px solid white;
+    }
+    .loginsubmit{
+        margin-top: 2rem;
+        width:20rem;
+        height:2.5rem;
+        background-color: #247a4d;
+        color:white;
+        border-radius:10px;
+        border:none
+    
+    }
+    .sign{
+
+        width:30rem;
+        margin-left:1rem;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+      
+    }
+    .spiralright{
+        position:absolute;
+        right:0;
+        top:6rem;
+        display:none
+    }
+    .signinput{
+        background: transparent;
+        border:1px solid white;
+        width:20rem;
+        border-radius: 10px;
+        height:2.5rem;
+    }
+    .signtop h1{
+        margin-left:0rem;
+        color:white;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .signtop span{
+        color:white;
+    }
+    .signhead{
+        color:white;
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+        margin-left: 0rem;
+    }
+    .signsubmit{
+        margin-top: 2rem;
+        width:20rem;
+        height:2.5rem;
+        background-color: #247a4d;
+        color:white;
+        border-radius:10px;
+        border:none
+    }
+
+}
+
+
+
+
+
 /* html,body{
     overflow-x: hidden;
 }
@@ -335,7 +560,7 @@
         bottom:-3rem;
     }
 }  */
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
  * {
 	box-sizing: border-box;
@@ -544,4 +769,4 @@ body {
 
 .social-login__icon:hover {
 	transform: scale(1.5);	
-}
+} */

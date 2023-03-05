@@ -1,4 +1,113 @@
-.PostPage{
+
+.postpage{
+    width:70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+}
+.postpage h1{
+    color:white;
+    font-size: 2rem;
+
+}
+
+.postpage .gradient{
+    width:70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    height:10rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)),url("../../images/holo.png");
+    border-radius: 20px;
+}
+.postimg{
+    height:10rem;
+    position: relative;
+    left:50vw;
+}
+.desc{
+    margin-top: 3rem;
+    color: white;
+    width:45vw;
+}
+.skills{
+    margin-top: 3rem;
+    color: white;
+    width:10vw;
+    position: absolute;
+    right:18em;
+    top:25rem;
+    
+}
+.skills p{
+    background-color: #247A4D;
+
+}
+.skills button{
+    margin-top: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    color: #247A4D;
+}
+@media(max-width:700px)
+{
+    
+.postpage{
+    width:90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+}
+.postpage h1{
+    color:white;
+    font-size: 2rem;
+
+}
+
+.postpage .gradient{
+    width:90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    height:10rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)),url("../../images/holo.png");
+    border-radius: 20px;
+}
+.postimg{
+    height:10rem;
+    position: relative;
+    left:50vw;
+}
+.desc{
+    margin-top: 3rem;
+    color: white;
+    width:90vw;
+}
+.skills{
+    margin-top: 3rem;
+    color: white;
+    width:90vw;
+    position: inherit;
+
+    
+}
+.skills p{
+    background-color: #247A4D;
+
+}
+.skills button{
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    color: #247A4D;
+}
+}
+
+/* .PostPage{
     height:100vh;
     margin-left: 4rem;
 }
@@ -100,4 +209,4 @@
         left:0.1rem;
         margin-top: -30rem;
     }
-}
+} */
